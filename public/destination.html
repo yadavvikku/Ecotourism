@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS2fl36K_B3TM1fYtHO6BBZQkAs36IAPY"></script> <!-- Google Maps API -->
+    <script type="module" src="destination.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="destination-name">Loading...</h1>
+    </header>
+    <main>
+        <div class="destination-details">
+            <!-- Cover Image -->
+            <img id="destination-image" alt="Destination Image" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+
+            <!-- Description -->
+            <p id="destination-description">Loading description...</p>
+            
+            <!-- Visiting Hours -->
+            <h2>Visiting Hours</h2>
+            <p id="destination-visiting-hours">Loading visiting hours...</p>
+            
+            <!-- Location Map -->
+            <h2>Location</h2>
+            <div id="map" style="width: 100%; height: 400px; margin-bottom: 20px;"></div>
+            
+            <!-- Embedded YouTube Video -->
+            <h2>Video Tour</h2>
+            <iframe id="youtube-video" width="100%" height="315" style="border: none;" allowfullscreen></iframe>
+            
+            <!-- Gallery -->
+            <h2>Gallery</h2>
+            <div id="gallery" class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;"></div>
+            
+            <!-- Amenities -->
+            <h2>Amenities</h2>
+            <ul id="destination-amenities"></ul>
+        </div>
+    </main>
+</body>
+</html>

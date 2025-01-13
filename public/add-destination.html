@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="add-destination.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Add a New Destination</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="destination-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter destination name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Enter a brief description" required></textarea>
+
+                <label for="image-url">Image URL:</label>
+                <input type="url" id="image-url" name="image-url" placeholder="Enter image URL" required>
+
+                <label for="visiting-hours">Visiting Hours:</label>
+                <input type="text" id="visiting-hours" name="visiting-hours" placeholder="Enter visiting hours" required>
+
+                <label for="youtube-video">YouTube Video URL:</label>
+                <input type="url" id="youtube-video" name="youtube-video" placeholder="Enter YouTube video URL" required>
+
+                <label for="map-location-lat">Map Location Latitude:</label>
+                <input type="number" id="map-location-lat" name="map-location-lat" placeholder="Enter latitude" step="any" required>
+
+                <label for="map-location-lng">Map Location Longitude:</label>
+                <input type="number" id="map-location-lng" name="map-location-lng" placeholder="Enter longitude" step="any" required>
+
+                <label for="gallery-images">Gallery Images (comma separated URLs):</label>
+                <textarea id="gallery-images" name="gallery-images" placeholder="Enter gallery image URLs" required></textarea>
+
+                <label for="amenities">Amenities (comma separated):</label>
+                <textarea id="amenities" name="amenities" placeholder="Enter amenities" required></textarea>
+
+                <label for="how-to-reach">How to Reach:</label>
+                <textarea id="how-to-reach" name="how-to-reach" placeholder="Enter travel instructions" required></textarea>
+
+                <label for="best-time">Best Time to Visit:</label>
+                <input type="text" id="best-time" name="best-time" placeholder="Enter the best time to visit" required>
+
+                <button type="submit">Add Destination</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
